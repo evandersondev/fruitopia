@@ -33,17 +33,23 @@ a {
   justify-content: space-between;
 }
 
+.hide {
+  opacity: 0;
+  visibility: visible;
+  height: 0;
+  margin-left: -150%;
+}
+
 .toggle-menu {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   list-style: none;
   z-index: 999;
   position: absolute;
-  top: -30px;
-  left: 100%;
-  opacity: 0;
+  top: 0;
+  left: 0;
   transition: all 0.5s;
-  display: hidden;
+  display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #333333dd;
@@ -65,17 +71,21 @@ a {
 }
 
 .menu {
-  height: 24px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.menu:hover {
-  height: 26px;
+.menu:hover img {
+  height: 28px;
 }
 
 .menu img {
-  height: 100%;
+  height: 25px;
 }
 
 .banner {
@@ -179,7 +189,7 @@ span {
 
 .social-icons img {
   height: 20px;
-  margin: 0 14px;
+  margin: 0 12px;
   opacity: 0.4;
   cursor: pointer;
   transition: opacity 0.3s;
@@ -215,8 +225,23 @@ footer {
       "left-column";
   }
 
+  .left-column h1 {
+    font-size: 55px;
+  }
+
   .left-column .search-box {
     width: 100%;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn buttom {
+    width: 200px;
+    margin-bottom: 15px;
+    text-align: center;
   }
 
   footer {

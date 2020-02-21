@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
   return res.render("index");
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3333;
 
 app.listen(PORT, () => {
   console.log("Server is running...");
